@@ -1,0 +1,181 @@
+body{
+  background-image: -webkit-linear-gradient(to bottom, navy, rgb(2, 2, 77));
+  background-image: -webkit-linear-gradient(top, navy, rgb(2, 2, 77));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 90vh;
+}
+.c1{
+    width:15%;
+    text-align: center;
+}
+.c2{
+    width:100%;
+    overflow:hidden;
+}
+.c3{
+    width:45%;
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top:100px;
+}
+.c4{
+    display:none;
+    margin:auto;
+}
+.flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+img{
+    width:2vw;
+    height:4vh;
+    filter: invert(1);
+    cursor:pointer;
+}
+.nu{
+    filter: invert(0);
+    width:19vw;
+    margin:5px;
+    height:28vh;
+}
+.nu1{
+    filter: invert(0);
+    width:19vw;
+    display:block;
+    margin:auto;
+    height:69vh;
+}
+.spatiu{
+    margin-bottom:50px;
+}
+button{
+    background-color:  rgb(18, 18, 108);
+    border:none;
+    border-radius:50%;
+    height: 10vh;
+    width: 5vw;
+}
+button:hover{
+    background-image: -webkit-radial-gradient(circle,rgb(130, 0, 111),rgb(141, 33, 195),rgb(205, 3, 127));
+}
+h1{
+    color:#ffffff;
+    text-align: start;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    color:aqua;
+    text-align: left;
+}
+.Flex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+video{
+    cursor: pointer;
+    display:block;
+    margin:auto;
+    width: 100%;
+    height: 80%;
+    gap:20px;
+}
+h2{
+    color:white;
+    text-align: center;
+    margin:10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+h3{
+    color:white;
+    margin:20px;
+    font-size:1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.but{
+    width: 20%;
+    border-radius:0px;
+    margin:5px;
+    color:white;
+    height:20%;
+    font-size:1.2rem;
+    background-color:magenta;
+    padding:10px; 
+}
+.but:hover{
+    border: 5px solid black;
+}
+#but2,#but1{
+    font-size: 1rem;
+}
+details{
+    padding:10px;
+}
+summary
+{
+    color:white;
+    background-color:  rgb(18, 18, 108);
+    padding:10px;
+    border-radius:20px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-size: 2vh;
+    font-family:cursive;
+    cursor:pointer;
+}
+.p{
+    text-align:center;
+}
+.p:hover{
+    background-color: navy;
+    cursor:pointer;
+}
+@media (max-width:765px){
+    .but{
+       width: 35%; 
+    }
+    img{
+        width: 5vw;
+    }
+    h1{
+    font-size: 1.1rem;
+    }
+    h2{
+    font-size: 0.8rem;
+    }
+    h3{
+    font-size: 0.rem;
+    }
+    .nu{
+        width: 80%;
+        display:block;
+        margin: 10px;
+    }
+    video{
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+    button{
+        width: 10vw;
+    }
+    .Flex{
+    grid-template-columns: repeat(1,1fr);
+    display:block;
+    margin:auto;
+    }
+    details{
+        font-size: 0.5rem;
+    }
+    .nu1{
+        height: 40vh;
+    }
+}
