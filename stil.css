@@ -40,6 +40,7 @@ img{
 .nu{
     filter: invert(0);
     width:19vw;
+    display:block;
     margin:5px;
     height:28vh;
 }
@@ -76,6 +77,10 @@ p{
 .Flex{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+}
+.Grid{
+    display: block;
+    margin:auto;
 }
 video{
     cursor: pointer;
@@ -139,6 +144,22 @@ summary
     background-color: navy;
     cursor:pointer;
 }
+#list{
+    margin-bottom:100px;
+}
+input{
+    background-color:  rgb(18, 18, 108);
+    color:white;
+    border:none;
+    width: 60%;
+    height: 2%;
+    border-radius:10px;
+    text-align: center;
+}
+input::placeholder{
+    text-align: center;
+    color:white;
+}
 @media (max-width:765px){
     .but{
        width: 35%; 
@@ -177,5 +198,13 @@ summary
     }
     .nu1{
         height: 40vh;
+    }
+    input{
+        font-size:0.9rem;
+        width: 100%;
+    }
+    summary{
+        font-size:0.7rem;
+        text-align: center;
     }
 }
