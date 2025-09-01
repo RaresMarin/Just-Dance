@@ -42,7 +42,7 @@
             <h1 id="h">YOUR SONGS</h1>
             <div class="spatiu">
             </div>
-            <p>A-E</p>
+            <p class="hey">A-E</p>
             <div class="Flex">
                 <div>
                     <h2 class="ce" id="melodia1"></h2>
@@ -61,7 +61,7 @@
             <img class="nu" src="3.webp" alt="CountingStars"/>
             </div>
         </div>
-            <p>F-J</p>
+            <p class="hey">F-J</p>
              <div class="Flex">
                 <div>
                     <h2 class="ce" id="melodia4"></h2>
@@ -75,8 +75,8 @@
             </div>
             
         </div>
-            <p>K-R</p>
-            <p>S-Z</p>
+            <p class="hey">K-R</p>
+            <p class="hey">S-Z</p>
         </div>
         <div class="c3" id="c3">
             <input list="lista" name="list" id="list" placeholder="Alphabetically (A-Z)"/>
@@ -88,42 +88,42 @@
         </br>
             <details>
                 <summary>▶  CHOREO STYLES</summary>
-                    <p class="p">Solo</p>
-                    <p class="p">Duo</p>
-                    <p class="p">Trio</p>
-                    <p class="p">Quartet</p>
+                    <p class="p" onclick="Solo()" id="1">Solo</p>
+                    <p class="p" onclick="Duo()" id="2">Duo</p>
+                    <p class="p" onclick="Trio()" id="3">Trio</p>
+                    <p class="p" onclick="For()" id="4">Quartet</p>
             </details>
             <details>
                 <summary>▶ MUSIC GENRES</summary>
-                    <p class="p">Pop</p>
-                    <p class="p">Dance</p>
-                    <p class="p">Electro</p>
-                    <p class="p">Rock</p>
-                    <p class="p">K-pop</p>
+                    <p class="p" onclick="Pop()" id="5">Pop</p>
+                    <p class="p" onclick="Dance()" id="6">Dance</p>
+                    <p class="p" onclick="E()" id="7">Electro</p>
+                    <p class="p" onclick="Rock()" id="8">Rock</p>
+                    <p class="p" onclick="K()" id="9">K-pop</p>
             </details>
             <details>
                 <summary>▶ MOODS</summary>
-                    <p class="p">Funny</p>
-                    <p class="p">Motivational</p>
-                    <p class="p">Epic</p>
-                    <p class="p">Calm</p>
+                    <p class="p" onclick="Y()" id="10">Funny</p>
+                    <p class="p" onclick="Y1()" id="11">Motivational</p>
+                    <p class="p" onclick="Y2()" id="12">Epic</p>
+                    <p class="p" onclick="Y3()" id="13">Calm</p>
             </details>
             <details>
                 <summary>▶ DECADES</summary>
-                    <p class="p">2020s</p>
-                    <p class="p">2010s</p>
-                    <p class="p">2000s</p>
-                    <p class="p">90s</p>
+                    <p class="p" onclick="Y4()" id="14">2020s</p>
+                    <p class="p" onclick="Y5()" id="15">2010s</p>
+                    <p class="p" onclick="Y6()" id="16">2000s</p>
+                    <p class="p" onclick="Y7()" id="17">90s</p>
             </details>
             <details>
                 <summary>▶ ACCESSIBILITY</summary>
-                    <p class="p">Jump-free</p>
-                    <p class="p">Ground moves-free</p>
-                    <p class="p">2000s</p>
-                    <p class="p">90s</p>
+                    <p class="p" onclick="Y8()" id="18">Jump-free</p>
+                    <p class="p" onclick="Y9()" id="19">Ground moves-free</p>
+                    <p class="p" onclick="Y10()" id="20">Small Places</p>
+                    <p class="p" onclick="Y11()" id="21">Seated</p>
             </details>
             <details>
-            <summary>RESET FILTERS</summary>
+            <summary id="reset" onclick="reset()">RESET FILTERS</summary>
             <p></p>
             </details>
         </div>
