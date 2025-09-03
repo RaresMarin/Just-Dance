@@ -8,10 +8,7 @@ let numele11 = ["Sonny", "Sabrina", "Ray"];
 function updateSongInfo(index) {
     let melodiaId = `melodia${index + 1}`;
     let artistId = `artist${index + 1}`;
-    let numar = `${index}1`;
     document.getElementById(melodiaId).textContent = piese[index];
-    document.getElementById(numar).style.display = "block";
-    document.getElementById(numar).classList.add("ce");
     document.getElementById(artistId).textContent = artisti[index];
 }
 
@@ -138,7 +135,7 @@ covers.forEach((img, index) => {
             video1.width = 500;
             video1.height = 600;
             c4.prepend(video1);
-
+            document.getElementById("imagine").src = `${index}1.jpg`
             document.getElementById("but1").style.display = "inline-block";
             document.getElementById("but2").style.display = "inline-block";
 
