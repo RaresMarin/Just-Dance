@@ -3,46 +3,51 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Just Dance</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stil.css">
     </head>
     <body>
-        <div class="flex">
+        <div class="flex" id="flexq">
             <div class="c4" id="c4">
                 <div class="container" id="container">
                 <h1 id="melodie"></h1>
                 <h3 id="chanteur"></h3>
+                <img class="nu2" id="imagine" src="01.jpg" alt="Imagine"/>
                 <button class="but" id="but2">Dance Now</button>
                 <button class="but" id="but1">Go back</button>
                 </div>
             </div>
+        <div class="flex" id="flex">
+
         <div class="c1" id="c1">
             <div class="spatiu">
             </div>
             <div class="spatiu">
-            <button><img src="notification.png" alt="Notificari"/></button>  
-            <button><img src="search.png" alt="Cauta"/></button>
+            <button><a href="not.html"><img src="notification.png" alt="Notificari"/></a></button>  
+            <button><a href="cauta.html"><img src="search.png" alt="Cauta"/></a></button>
             </div>
             <div class="spatiu">
-            <button><img src="home.png" alt="Acasa"/></button>
-            <button><img src="music.png" alt="Piese"/></button>
-            <button><img src="playlist.png" alt="Playlist"/></button>
-            <button><img src="user-in-a-square.png" alt="Caracter"/></button>
+            <button><a href="acasa.html"><img src="home.png" alt="Acasa"/></a></button>
+            <button><a href="index.html"><img src="music.png" alt="Piese"/></a></button>
+            <button><a href="playlist.html"><img src="playlist.png" alt="Playlist"/></a></button>
+            <button><a href="coach.html"><img src="user-in-a-square.png" alt="Caracter"/></a></button>
   </div>
   <div>
-                <button><img src="plus.png" alt="+"/></button>
-                <button><img src="protection.png" alt="Setari"/></button>
+                <button><img src="plus.png" alt="+"/><a href="plus.html"></a></button>
+                <button><img src="protection.png" alt="Setari"/><a href="seting.html"></a></button>
                 </div>
         </div>
         <div class="c2" id="c2">
+        <img class="slot" src="machine.jpg" alt="Shuffle"/>
+        <button id="random" onclick="random()">Suprize me</button>
             <div class="spatiu">
             </div>
             <h1 id="h">YOUR SONGS</h1>
             <div class="spatiu">
             </div>
-            <p>A-E</p>
+            <p class="hey">A-E</p>
             <div class="Flex">
                 <div>
                     <h2 class="ce" id="melodia1"></h2>
@@ -53,7 +58,6 @@
                     <h2 class="ce" id="melodia2"></h2>
                     <h3 class="ce" id="artist2"></h3>
             <img class="nu" src="2.webp" alt="Apt"/>
-
             </div>
             <div>
                 <h2 class="ce" id="melodia3"></h2>
@@ -61,7 +65,7 @@
             <img class="nu" src="3.webp" alt="CountingStars"/>
             </div>
         </div>
-            <p>F-J</p>
+            <p class="hey">F-J</p>
              <div class="Flex">
                 <div>
                     <h2 class="ce" id="melodia4"></h2>
@@ -75,9 +79,21 @@
             </div>
             
         </div>
-            <p>K-R</p>
-            <p>S-Z</p>
+            <p class="hey">K-R</p>
+            <p class="hey">S-Z</p>
+            <div class="Flex">
+                <div class="spatiu">
+            <div>
+                            <h2 class="ce" id="melodia6"></h2>
+                            <h3 class="ce" id="artist6"></h3>
+            <img class="nu" src="6.png" alt="Zjerm"/>
         </div>
+                        <div class="spatiu"></div>
+            </div>
+            </div>
+            </div>
+            
+
         <div class="c3" id="c3">
             <input list="lista" name="list" id="list" placeholder="Alphabetically (A-Z)"/>
             <datalist id="lista" >
@@ -88,45 +104,47 @@
         </br>
             <details>
                 <summary>▶  CHOREO STYLES</summary>
-                    <p class="p">Solo</p>
-                    <p class="p">Duo</p>
-                    <p class="p">Trio</p>
-                    <p class="p">Quartet</p>
+                    <p class="p" onclick="Solo()" id="1">Solo</p>
+                    <p class="p" onclick="Duo()" id="2">Duo</p>
+                    <p class="p" onclick="Trio()" id="3">Trio</p>
+                    <p class="p" onclick="For()" id="4">Quartet</p>
             </details>
             <details>
                 <summary>▶ MUSIC GENRES</summary>
-                    <p class="p">Pop</p>
-                    <p class="p">Dance</p>
-                    <p class="p">Electro</p>
-                    <p class="p">Rock</p>
-                    <p class="p">K-pop</p>
+                    <p class="p" onclick="Pop()" id="5">Pop</p>
+                    <p class="p" onclick="Dance()" id="6">Dance</p>
+                    <p class="p" onclick="E()" id="7">Electro</p>
+                    <p class="p" onclick="Rock()" id="8">Rock</p>
+                    <p class="p" onclick="K()" id="9">K-pop</p>
             </details>
             <details>
                 <summary>▶ MOODS</summary>
-                    <p class="p">Funny</p>
-                    <p class="p">Motivational</p>
-                    <p class="p">Epic</p>
-                    <p class="p">Calm</p>
+                    <p class="p" onclick="Y()" id="10">Funny</p>
+                    <p class="p" onclick="Y1()" id="11">Motivational</p>
+                    <p class="p" onclick="Y2()" id="12">Epic</p>
+                    <p class="p" onclick="Y3()" id="13">Calm</p>
             </details>
             <details>
                 <summary>▶ DECADES</summary>
-                    <p class="p">2020s</p>
-                    <p class="p">2010s</p>
-                    <p class="p">2000s</p>
-                    <p class="p">90s</p>
+                    <p class="p" onclick="Y4()" id="14">2020s</p>
+                    <p class="p" onclick="Y5()" id="15">2010s</p>
+                    <p class="p" onclick="Y6()" id="16">2000s</p>
+                    <p class="p" onclick="Y7()" id="17">90s</p>
             </details>
             <details>
                 <summary>▶ ACCESSIBILITY</summary>
-                    <p class="p">Jump-free</p>
-                    <p class="p">Ground moves-free</p>
-                    <p class="p">2000s</p>
-                    <p class="p">90s</p>
+                    <p class="p" onclick="Y8()" id="18">Jump-free</p>
+                    <p class="p" onclick="Y9()" id="19">Ground moves-free</p>
+                    <p class="p" onclick="Y10()" id="20">Small Places</p>
+                    <p class="p" onclick="Y11()" id="21">Seated</p>
             </details>
             <details>
-            <summary>RESET FILTERS</summary>
+            <summary id="reset" onclick="reset()">RESET FILTERS</summary>
             <p></p>
             </details>
         </div>
+            </div>
+                        </div>
         </div>
         <script src="script.js" async defer></script>
     </body>
