@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="stil.css">
     </head>
     <body>
-        <div class="flex">
+        <div class="flex" id="flexq">
             <div class="c4" id="c4">
                 <div class="container" id="container">
                 <h1 id="melodie"></h1>
@@ -19,22 +19,24 @@
                 <button class="but" id="but1">Go back</button>
                 </div>
             </div>
+        <div class="flex" id="flex">
+
         <div class="c1" id="c1">
             <div class="spatiu">
             </div>
             <div class="spatiu">
-            <button><img src="notification.png" alt="Notificari"/></button>  
-            <button><img src="search.png" alt="Cauta"/></button>
+            <button><a href="not.html"><img src="notification.png" alt="Notificari"/></a></button>  
+            <button><a href="cauta.html"><img src="search.png" alt="Cauta"/></a></button>
             </div>
             <div class="spatiu">
-            <button><img src="home.png" alt="Acasa"/></button>
-            <button><img src="music.png" alt="Piese"/></button>
-            <button><img src="playlist.png" alt="Playlist"/></button>
-            <button><img src="user-in-a-square.png" alt="Caracter"/></button>
+            <button><a href="acasa.html"><img src="home.png" alt="Acasa"/></a></button>
+            <button><a href="index.html"><img src="music.png" alt="Piese"/></a></button>
+            <button><a href="playlist.html"><img src="playlist.png" alt="Playlist"/></a></button>
+            <button><a href="coach.html"><img src="user-in-a-square.png" alt="Caracter"/></a></button>
   </div>
   <div>
-                <button><img src="plus.png" alt="+"/></button>
-                <button><img src="protection.png" alt="Setari"/></button>
+                <button><img src="plus.png" alt="+"/><a href="plus.html"></a></button>
+                <button><img src="protection.png" alt="Setari"/><a href="seting.html"></a></button>
                 </div>
         </div>
         <div class="c2" id="c2">
@@ -79,7 +81,19 @@
         </div>
             <p class="hey">K-R</p>
             <p class="hey">S-Z</p>
+            <div class="Flex">
+                <div class="spatiu">
+            <div>
+                            <h2 class="ce" id="melodia6"></h2>
+                            <h3 class="ce" id="artist6"></h3>
+            <img class="nu" src="6.png" alt="Zjerm"/>
         </div>
+                        <div class="spatiu"></div>
+            </div>
+            </div>
+            </div>
+            
+
         <div class="c3" id="c3">
             <input list="lista" name="list" id="list" placeholder="Alphabetically (A-Z)"/>
             <datalist id="lista" >
@@ -129,6 +143,8 @@
             <p></p>
             </details>
         </div>
+            </div>
+                        </div>
         </div>
         <script src="script.js" async defer></script>
     </body>
