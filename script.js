@@ -502,6 +502,9 @@ function random(){
     overlay.appendChild(machine);
     document.body.appendChild(overlay);
     let slot = document.createElement("img");
+    if(random==5)
+    slot.src = `${random + 1}.png`;
+else
     slot.src = `${random + 1}.webp`;
     let audio = new Audio(`${random + 1}.mp3`);
     audio.play();
@@ -551,5 +554,41 @@ video.addEventListener("ended", () => {
         overlay.remove();
         audio.pause();
     })
+
+}
+for (let i=0;i<4;i++){
+    let random = Math.floor(Math.random()*6);
+    let imagine = document.createElement("img");
+    imagine.classList.add("nu3");
+    imagine.style.display = "inline";
+    imagine.src = `${random+1}.webp`;
+        if(random==5)
+        {
+    imagine.src = `${random+1}.png`;
+
+        }
+    document.querySelectorAll(".suma").forEach((sum)=>{
+        sum.append(imagine)});
+        console.log(random);
+
+}
+for (let i=0;i<4;i++){
+    let random = Math.floor(Math.random()*5);
+    let imagine = document.createElement("img");
+    imagine.classList.add("nu3");
+    imagine.style.display = "inline";
+    imagine.src = `${random+1}.webp`;
+    document.querySelectorAll(".suma1").forEach((sum)=>{
+        sum.append(imagine)});
+
+}
+for (let i=0;i<4;i++){
+    let random = Math.floor(Math.random()*5);
+    let imagine = document.createElement("img");
+    imagine.classList.add("nu3");
+    imagine.style.display = "inline";
+    imagine.src = `${random+1}.webp`;
+    document.querySelectorAll(".suma2").forEach((sum)=>{
+        sum.append(imagine)});
 
 }
