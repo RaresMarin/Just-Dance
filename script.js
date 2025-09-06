@@ -1,10 +1,14 @@
 let covers = document.querySelectorAll(".nu");
-let piese = ["All star", "Apt Grafiti Alternative Version", "Counting Stars", "Houdini", "Hung Up","Zjerm"];
-let artisti = ["Smash Mouth", "Bruno Mars & Rose", "One Republic", "Dua Lipa", "Madonna" , "Skhodra Electronike"];
+let piese = ["All star", "Apt Grafiti Alternative Version", "Born to be alive", "Counting Stars", "Drip","Don Raja", "Houdini", "Hung Up", "Viva La Vida","Zjerm"];
+let artisti = ["Smash Mouth", "Bruno Mars & Rose","Patrick Hernandez", "One Republic" , "BABYMONSTER","Sureal", "Dua Lipa", "Madonna" ,"Coldplay", "Skhodra Electronike"];
 let numele = ["Spark", "DR. Gigavolt", "Byte", "Fluff"];
-let numele1 = ["", "Rosie", "Starseker", "Mirage"];
+let numele1 = ["", "Rosie","", "Starseker","","", "Mirage" , "", "Alexender"];
 let numele11 = ["Sonny", "Sabrina", "Ray"];
 let numele2 = ["Besa" , "Kole"];
+let numele3 = ["Lynda","Richard"];
+let numele4 = ["Aris","Eisha" , "Ruan"];
+let numele5 = ["Rihana", "Rares" , "Ruanda"];
+
 
 function updateSongInfo(index) {
     let melodiaId = `melodia${index + 1}`;
@@ -36,7 +40,56 @@ function createCoachCards(index, video1, audio1, c4, c1, c2, c3, chanteur) {
             div1.append(div);
             div.append(imagine, nume);
         }
-    } else if (index == 4) {
+    } 
+    else if (index == 2) {
+        for (let i = 0; i < 2; i++) {
+            let div = document.createElement("div");
+            let nume = document.createElement("h1");
+            nume.classList.add("melodie");
+            nume.textContent = numele3[i];
+            nume.style.textAlign = "center";
+            div.style.height = "100%";
+            div.style.width = "25%";
+            let imagine = document.createElement("img");
+            imagine.src = `${index + 1}${i}c.jpg`;
+            imagine.classList.add("nu1");
+            div1.append(div);
+            div.append(imagine, nume);
+        }
+    }
+       else if (index == 4) {
+        for (let i = 0; i < 3; i++) {
+            let div = document.createElement("div");
+            let nume = document.createElement("h1");
+            nume.classList.add("melodie");
+            nume.textContent = numele4[i];
+            nume.style.textAlign = "center";
+            div.style.height = "100%";
+            div.style.width = "25%";
+            let imagine = document.createElement("img");
+            imagine.src = `${index + 1}${i}c.jpg`;
+            imagine.classList.add("nu1");
+            div1.append(div);
+            div.append(imagine, nume);
+        }
+    }
+           else if (index == 5) {
+        for (let i = 0; i < 3; i++) {
+            let div = document.createElement("div");
+            let nume = document.createElement("h1");
+            nume.classList.add("melodie");
+            nume.textContent = numele5[i];
+            nume.style.textAlign = "center";
+            div.style.height = "100%";
+            div.style.width = "25%";
+            let imagine = document.createElement("img");
+            imagine.src = `${index + 1}${i}c.jpg`;
+            imagine.classList.add("nu1");
+            div1.append(div);
+            div.append(imagine, nume);
+        }
+    }
+    else if (index ==7) {
         for (let i = 0; i < 3; i++) {
             let div = document.createElement("div");
             let nume = document.createElement("h1");
@@ -52,7 +105,7 @@ function createCoachCards(index, video1, audio1, c4, c1, c2, c3, chanteur) {
             div.append(imagine, nume);
         }
     }
-    else if(index==5){
+    else if(index==9){
       for (let i = 0; i < 2; i++) {
             let div = document.createElement("div");
             let nume = document.createElement("h1");
@@ -83,8 +136,8 @@ function createCoachCards(index, video1, audio1, c4, c1, c2, c3, chanteur) {
     }
 
     div1.addEventListener("click", () => {
-                    if(index==5){
-                video1.src="61.mp4";
+                    if(index==10){
+                video1.src="101.mp4";
             }
         document.getElementById("flexq").style.display = "none";
         div1.style.display = "none";
@@ -102,11 +155,12 @@ function createCoachCards(index, video1, audio1, c4, c1, c2, c3, chanteur) {
         video1.play();
         video1.addEventListener("ended", () => {
             div2.style.display = "none";
-            c4.style.display = "block";
-            c1.style.display = "block";
+          c1.style.display = "block";
             c2.style.display = "block";
-        document.getElementById("flexq").style.display = "block";
-            c3.style.display = "flex";
+            c3.style.display = "grid";
+                c4.style.display = "none";
+        document.getElementById("flexq").style.display = "flex";
+            c3.style.display = "block";
         });
     });
 }
@@ -149,6 +203,8 @@ covers.forEach((img, index) => {
             let chanteur = document.getElementById("chanteur");
             chanteur.textContent = artisti[index];
             text.textContent = piese[index];
+            chanteur.style.color = "white";
+            text.style.color = "white";
             c4.style.display = "block";
             c4.width = 600;
             video1.autoplay = true;
@@ -173,6 +229,7 @@ covers.forEach((img, index) => {
                 imagine.style.display = "none";
                 video1.remove();
                 chanteur.textContent = "Choose your coach";
+                chanteur.style.color = "white";
                 text.textContent = "";
                 document.getElementById("but2").style.display = "none";
                 document.getElementById("but1").style.display = "none";
@@ -193,8 +250,11 @@ covers.forEach((img, index) => {
 function Solo() {
     let p = document.getElementById("1");
     covers[0].style.display = "none";
+    covers[2].style.display = "none";
     covers[4].style.display = "none";
     covers[5].style.display = "none";
+    covers[7].style.display = "none";
+    covers[9].style.display = "none";
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
     document.getElementById("reset").style.backgroundColor = "cyan";
@@ -205,7 +265,8 @@ function Duo(){
     covers.forEach((cover)=>{
         cover.style.display = "none";
     })
-    covers[5].style.display = "block";
+    covers[2].style.display = "block";
+    covers[9].style.display = "block";
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
     document.getElementById("reset").style.backgroundColor = "cyan";
@@ -217,6 +278,8 @@ function Trio(){
         cover.style.display = "none";
     });
     covers[4].style.display = "block";
+    covers[5].style.display = "block";
+    covers[6].style.display = "block";
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
     document.getElementById("reset").style.backgroundColor = "cyan";
@@ -271,7 +334,7 @@ let p = document.getElementById("7");
     covers.forEach((cover)=>{
         cover.style.display = "none";
     });
-    covers[4].style.display = "block";
+    covers[8].style.display = "block";
     covers[5].style.display = "block";
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
@@ -295,6 +358,7 @@ let p = document.getElementById("9");
         cover.style.display = "none";
     });
     covers[1].style.display = "block";
+    covers[4].style.display = "block";
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
     document.getElementById("reset").style.backgroundColor = "cyan";
@@ -332,6 +396,7 @@ let p = document.getElementById("12");
     });
     covers[2].style.display = "block";
     covers[3].style.display = "block";
+    covers[7].style.display = "block";
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
     document.getElementById("reset").style.backgroundColor = "cyan";
@@ -344,6 +409,7 @@ let p = document.getElementById("13");
     });
     covers[1].style.display = "block";
     covers[4].style.display = "block";
+    covers[8].style.display = "block";
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
     document.getElementById("reset").style.backgroundColor = "cyan";
@@ -356,7 +422,10 @@ let p = document.getElementById("14");
     });
     covers[1].style.display = "block";
     covers[5].style.display = "block";
-    covers[3].style.display = "block";
+    covers[4].style.display = "block";
+    covers[6].style.display = "block";
+    covers[9].style.display = "block";
+
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
     document.getElementById("reset").style.backgroundColor = "cyan";
@@ -367,7 +436,7 @@ let p = document.getElementById("15");
     covers.forEach((cover)=>{
         cover.style.display = "none";
     });
-    covers[2].style.display = "block";
+    covers[3].style.display = "block";
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
     document.getElementById("reset").style.backgroundColor = "cyan";
@@ -378,7 +447,8 @@ let p = document.getElementById("16");
     covers.forEach((cover)=>{
         cover.style.display = "none";
     });
-    covers[4].style.display = "block";
+    covers[7].style.display = "block";
+    covers[8].style.display = "block";
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
     document.getElementById("reset").style.backgroundColor = "cyan";
@@ -390,6 +460,7 @@ let p = document.getElementById("17");
         cover.style.display = "none";
     });
     covers[0].style.display = "block";
+    covers[2].style.display = "block";
     p.style.backgroundColor = "cyan";
     p.style.color = "navy";
     document.getElementById("reset").style.backgroundColor = "cyan";
@@ -435,7 +506,16 @@ function Y11(){
 
 }
 function Duo(){
-
+let p = document.getElementById("10");
+    covers.forEach((cover)=>{
+        cover.style.display = "none";
+    });
+    covers[2].style.display = "block";
+    covers[10].style.display = "block";
+    p.style.backgroundColor = "cyan";
+    p.style.color = "navy";
+    document.getElementById("reset").style.backgroundColor = "cyan";
+    document.getElementById("reset").style.color = "navy";
 }
 function reset(){
     covers.forEach((cover) =>{
@@ -460,11 +540,11 @@ document.getElementById("list").addEventListener("input", (e) => {
     let ordine;
 
     if (e.target.value === "By difficulty (low to high)") {
-        ordine = [0, 3, 2, 1, 4];
+        ordine = [0, 8,6,3,9, 2,5, 1,7, 4];
     } else if (e.target.value === "By difficulty (high to low)") {
-        ordine = [4, 1, 2, 3, 0];
+        ordine = [4, 7,1,5, 2,9, 3,6,8,0];
     } else {
-        ordine = [0, 1, 2, 3, 4];
+        ordine = [0, 1, 2, 3, 4,5,6,7,8,9,10];
     }
 
     const covers = document.querySelectorAll(".nu");
@@ -502,67 +582,38 @@ function random(){
     overlay.appendChild(machine);
     document.body.appendChild(overlay);
     let slot = document.createElement("img");
-    if(random==5)
-    slot.src = `${random + 1}.png`;
-else
-    slot.src = `${random + 1}.webp`;
-    let audio = new Audio(`${random + 1}.mp3`);
+    if(random==5 && random ==2 && random==9)
+    {
+    slot.src = `${random + 1}.jpg`;
+        let audio = new Audio(`${random + 1}.mp3`);
     audio.play();
     slot.classList.add("machine");
         machine.appendChild(slot);
-        slot.addEventListener("click" , ()=>{
-            let video = document.createElement("video");
-            video.src=`${random + 1}.mp4`;
-            video.autoplay = true;
-            video.loop = false;
-            video.muted = false;
-            video.width = 500;
-            video.height = 600;
-            c1.style.display = "none";
-            c2.style.display = "none";
-            c3.style.display = "none";
-            but1.style.display = "none";
-            but2.style.display = "none";
-            c4.style.display = "block";
-            let div2 = document.createElement("div");
-        div2.style.display = "flex";
-        div2.style.flexDirection = "row";
-        div2.style.justifyContent = "center";
-        div2.style.alignItems = "center";
-        document.body.append(div2);
-video.addEventListener("ended", () => {
-    // Remove the video container
-    document.getElementById("flexq").style.display = "none";
-    div2.remove();
-
-    // Hide the overlay and machine if still present
-    if (overlay && overlay.parentNode) overlay.remove();
-
-    // Hide c4 (details/video area)
-    c4.style.display = "none";
-
-    // Show main UI sections
-    document.getElementById("flex").style.display = "flex";
-    c1.style.display = "block";
-    c2.style.display = "block";
-    c3.style.display = "flex";
-
-    // Optionally, reset song/artist info or buttons here if needed
-});
-        })
     overlay.addEventListener("click",()=>{
         overlay.remove();
         audio.pause();
     })
-
+    }
+    else{
+slot.src = `${random + 1}.webp`;
+    let audio = new Audio(`${random + 1}.mp3`);
+    audio.play();
+    slot.classList.add("machine");
+        machine.appendChild(slot);
+    overlay.addEventListener("click",()=>{
+        overlay.remove();
+        audio.pause();
+    })
+    }
 }
+
 for (let i=0;i<4;i++){
     let random = Math.floor(Math.random()*6);
     let imagine = document.createElement("img");
     imagine.classList.add("nu3");
     imagine.style.display = "inline";
     imagine.src = `${random+1}.webp`;
-        if(random==5)
+        if(random==10 && random ==2)
         {
     imagine.src = `${random+1}.png`;
 
