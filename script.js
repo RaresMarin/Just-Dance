@@ -2,12 +2,12 @@ let covers = document.querySelectorAll(".nu");
 let piese = ["All star", "Apt Grafiti Alternative Version", "Born to be alive", "Counting Stars", "Drip","Don Raja", "Houdini", "Hung Up", "Viva La Vida","Zjerm"];
 let artisti = ["Smash Mouth", "Bruno Mars & Rose","Patrick Hernandez", "One Republic" , "BABYMONSTER","Sureal", "Dua Lipa", "Madonna" ,"Coldplay", "Skhodra Electronike"];
 let numele = ["Spark", "DR. Gigavolt", "Byte", "Fluff"];
-let numele1 = ["", "Rosie","", "Starseker","","", "Mirage" , "", "Alexender"];
+let numele1 = ["", "Rosie","", "Starseker","","", "Mirage" , "", "Zepheon"];
 let numele11 = ["Sonny", "Sabrina", "Ray"];
 let numele2 = ["Besa" , "Kole"];
-let numele3 = ["Lynda","Richard"];
-let numele4 = ["Aris","Eisha" , "Ruan"];
-let numele5 = ["Rihana", "Rares" , "Ruanda"];
+let numele3 = ["Stacy Step","Danny Dips"];
+let numele4 = ["Cassia","Boom-B" , "Vineel"];
+let numele5 = ["Isha", "Zayo" , "Mira"];
 
 
 function updateSongInfo(index) {
@@ -256,21 +256,21 @@ function Solo() {
     covers[7].style.display = "none";
     covers[9].style.display = "none";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Duo(){
-    let p = document.getElementById("1");
+    let p = document.getElementById("2");
     covers.forEach((cover)=>{
         cover.style.display = "none";
     })
     covers[2].style.display = "block";
     covers[9].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Trio(){
     let p = document.getElementById("3");
@@ -279,11 +279,11 @@ function Trio(){
     });
     covers[4].style.display = "block";
     covers[5].style.display = "block";
-    covers[6].style.display = "block";
+    covers[7].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function For(){
 let p = document.getElementById("4");
@@ -292,9 +292,9 @@ let p = document.getElementById("4");
     });
     covers[0].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Rock(){
 let p = document.getElementById("8");
@@ -303,9 +303,9 @@ let p = document.getElementById("8");
     });
     covers[0].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Pop(){
 let p = document.getElementById("5");
@@ -315,9 +315,9 @@ let p = document.getElementById("5");
     covers[2].style.display = "block";
     covers[3].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Dance(){
 let p = document.getElementById("6");
@@ -325,9 +325,9 @@ let p = document.getElementById("6");
         cover.style.display = "block";
     });
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function E(){
 let p = document.getElementById("7");
@@ -337,9 +337,9 @@ let p = document.getElementById("7");
     covers[8].style.display = "block";
     covers[5].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Rock(){
 let p = document.getElementById("8");
@@ -348,9 +348,9 @@ let p = document.getElementById("8");
     });
     covers[0].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function K(){
 let p = document.getElementById("9");
@@ -360,9 +360,9 @@ let p = document.getElementById("9");
     covers[1].style.display = "block";
     covers[4].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y(){
 let p = document.getElementById("10");
@@ -372,9 +372,9 @@ let p = document.getElementById("10");
     covers[0].style.display = "block";
     covers[4].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y1(){
 let p = document.getElementById("11");
@@ -385,9 +385,9 @@ let p = document.getElementById("11");
     covers[3].style.display = "block";
     covers[5].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y2(){
 let p = document.getElementById("12");
@@ -398,9 +398,9 @@ let p = document.getElementById("12");
     covers[3].style.display = "block";
     covers[7].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y3(){
 let p = document.getElementById("13");
@@ -411,9 +411,9 @@ let p = document.getElementById("13");
     covers[4].style.display = "block";
     covers[8].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y4(){
 let p = document.getElementById("14");
@@ -427,9 +427,9 @@ let p = document.getElementById("14");
     covers[9].style.display = "block";
 
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y5(){
 let p = document.getElementById("15");
@@ -438,9 +438,9 @@ let p = document.getElementById("15");
     });
     covers[3].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y6(){
 let p = document.getElementById("16");
@@ -450,9 +450,9 @@ let p = document.getElementById("16");
     covers[7].style.display = "block";
     covers[8].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y7(){
 let p = document.getElementById("17");
@@ -462,9 +462,9 @@ let p = document.getElementById("17");
     covers[0].style.display = "block";
     covers[2].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y8(){
 let p = document.getElementById("18");
@@ -473,9 +473,9 @@ let p = document.getElementById("18");
     });
     covers[3].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y9(){
 let p = document.getElementById("19");
@@ -484,9 +484,9 @@ let p = document.getElementById("19");
     });
     covers[2].style.display = "none";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y10(){
 let p = document.getElementById("10");
@@ -498,24 +498,24 @@ let p = document.getElementById("10");
     covers[4].style.display = "block";
     covers[5].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function Y11(){
 
 }
 function Duo(){
-let p = document.getElementById("10");
+let p = document.getElementById("2");
     covers.forEach((cover)=>{
         cover.style.display = "none";
     });
     covers[2].style.display = "block";
-    covers[10].style.display = "block";
+    covers[9].style.display = "block";
     p.style.backgroundColor = "cyan";
-    p.style.color = "navy";
+    p.style.color = "#e6c1ec";
     document.getElementById("reset").style.backgroundColor = "cyan";
-    document.getElementById("reset").style.color = "navy";
+    document.getElementById("reset").style.color = "#e6c1ec";
 }
 function reset(){
     covers.forEach((cover) =>{
