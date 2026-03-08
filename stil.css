@@ -110,10 +110,6 @@ button{
     height: 10vh;
     width: 5vw;
 }
-button:hover{
-    background-image: -webkit-radial-gradient(circle,#3c0644,#ffdac8,#9d37ad);
-
-}
 h1{
     margin-top:-80px;
     color:#101010;
@@ -358,6 +354,12 @@ input::placeholder{
     #random{
         display:none;
     }
+}
+#h{
+    margin:10px;
+    color:black;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #love{
     background-image:url('x.png');
